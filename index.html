@@ -3,37 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="description" content="A simple, responsive calculator built with Vanilla JavaScript, HTML, and CSS. It supports basic arithmetic operations and features a clean, user-friendly design.">
+  <link rel="stylesheet" type="text/css" href="./style.css">
   <title>Calculator</title>
 </head>
 <body>
   <header>
   </header>
   <main>
-
-    <div>
-        <div></div>
-        <div>
+    <div id="wholeBodyCal">
+        <div id="showcaseSection"></div>
+        <div id="buttonContainer">
+          <section>
             <!--Numbers-->
-            <button alt="1">1</button>
-            <button alt="2">2</button>
-            <button alt="3">3</button>
-            <button alt="4">4</button>
-            <button alt="5">5</button>
-            <button alt="6">6</button>
-            <button alt="7">7</button>
-            <button alt="8">8</button>
-            <button alt="9">9</button>
-            <button alt="0">0</button>
-            <!--Operators-->
-            <button alt="+">+</button>
-            <button alt="-">-</button>
-            <button alt="*">*</button>
-            <button alt="=">=</button>
-            <!--Enter-->
-            <button alt="enter">Enter</button>
-            <!--Clear-->
+            <button class="button num" alt="1">1</button>
+            <button class="button num" alt="2">2</button>
+            <button class="button num" alt="3">3</button>
+            <button class="button num" alt="4">4</button>
+            <button class="button num" alt="5">5</button>
+            <button class="button num" alt="6">6</button>
+            <button class="button num" alt="7">7</button>
+            <button class="button num" alt="8">8</button>
+            <button class="button num" alt="9">9</button>
+            <button class="button num" alt="0">0</button>
+          </section>
+            <section>
+              <!--Operators-->
+            <button class="button operator" alt="+">+</button>
+            <button class="button operator" alt="-">-</button>
+            <button class="button operator" alt="*">x</button>
+            <button class="button operator" alt="/">/</button>
+            <aside>
+              <!--Enter-->
+              <button id="enterBTN" class="button" alt="enter">↵</button>
+              <!--Clear-->
+              <button class="button" alt="reset">CE</button>
+            </aside>
+            </section>
         </div>
     </div>
 
@@ -41,6 +47,6 @@
   </main>
   <footer>
   </footer>
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

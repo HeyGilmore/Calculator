@@ -1,0 +1,60 @@
+@import url("./reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+body{
+    background-color: #dfdfdf;
+}
+
+main{
+    max-height:420px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wholeBodyCal{
+    max-width: 420px;
+    border: 10px solid black;
+    border-radius: 12px;
+    margin: .5em;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+
+#buttonContainer{
+    display: flex;
+}
+
+#buttonContainer section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.button{
+    font-family: "New Rocker", serif;
+    font-size: 48px;
+    color: azure;
+    background-color: #323232;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+}
+.button:hover{
+    background-color: azure;
+    color: #323232;
+}
+
+#showcaseSection{
+    border: 1px solid #1e1e1e;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "New Rocker", serif;
+    font-size: 48px;
+    background-color: #323232;
+    border-radius: 12px;
+    color: azure;
+    text-align: right;
+}
